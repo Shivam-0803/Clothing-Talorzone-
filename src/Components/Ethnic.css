@@ -1,0 +1,75 @@
+.ethnic-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+.ethnic-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #63210d;
+    margin-bottom: 20px;
+}
+
+.ethnic-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ethnic-card {
+    width: 250px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ethnic-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ethnic-image {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.ethnic-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.ethnic-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.ethnic-price {
+    font-size: 16px;
+    color: #e84e1f;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ethnic-add-to-cart {
+    padding: 10px 20px;
+    background-color: #63210d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ethnic-add-to-cart:hover {
+    background-color: #b24a2b;
+}

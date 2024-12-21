@@ -1,0 +1,148 @@
+/* Container Styling */
+.card-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+
+}
+
+/* Promo Banner Styling */
+.promo-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #ffe5b4; */
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(169, 131, 131, 0.1);
+}
+.promo-banner-image{
+    opacity: 0.7;
+    /* object-fit: contain; */
+    height: 310%;
+    width: 500%;
+}
+
+.promo-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ffe5b4; */
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  
+    
+}
+
+.promo-banner-content {
+    padding: 20px; /* Add some padding for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Align text inside the content */
+    position: absolute; /* Make the content overlap the banner */
+    width: 100%; /* Ensure content spans the full width */
+    height: 100%; /* Ensure content spans the full height */
+    /* background: rgba(217, 218, 200, 0.5);  */
+}
+
+
+.promo-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #63210d;
+    margin-bottom: 10px;
+}
+
+.promo-subtitle {
+    font-size: 18px;
+    color: #3b3838;
+    margin-bottom: 20px;
+}
+
+.promo-button {
+    padding: 10px 20px;
+    background-color: #63210d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.promo-button:hover {
+    background-color: #e07500;
+}
+
+/* Product Grid Styling */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Product Card Styling */
+.product-card {
+    position: relative;
+    width: 270px;
+    height: 400px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+}
+
+.product-card:hover {
+    transform: translateY(-10px );
+    /* background-color: #333; */
+    /* -webkit-backdrop-filter: blur(500px);
+  backdrop-filter: blur(5px); */
+    box-shadow: 5px 8px 15px rgba(28, 25, 25, 1);
+
+}
+
+/* Product Image Styling */
+.product-image {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Product Info Styling */
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #e84e1f;
+    font-weight: bold;
+}
