@@ -23,6 +23,12 @@ const CardContainer = () => {
       price: "₹4,999.00",
       image: "https://images.pexels.com/photos/4937452/pexels-photo-4937452.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
+
+    { id: 1, name: 'Embroidered Anarkali Suit', price: '₹7,999.00', image: 'https://images.pexels.com/photos/4355702/pexels-photo-4355702.jpeg?auto=compress&cs=tinysrgb&w=600' },
+    { id: 2, name: 'Silk Saree with Zari Work', price: '₹12,499.00', image: 'https://images.pexels.com/photos/1447885/pexels-photo-1447885.jpeg?auto=compress&cs=tinysrgb&w=600' },
+    { id: 3, name: 'Festive Lehenga Choli Set', price: '₹15,999.00', image: 'https://images.pexels.com/photos/26314469/pexels-photo-26314469/free-photo-of-portrait-of-blonde-woman-in-glove.jpeg?auto=compress&cs=tinysrgb&w=600' },
+    { id: 4, name: 'Printed Kurta & Palazzo Set', price: '₹3,499.00', image: 'https://images.pexels.com/photos/17243661/pexels-photo-17243661/free-photo-of-a-woman-in-a-plaid-skirt-and-white-t-shirt.jpeg?auto=compress&cs=tinysrgb&w=600' },
+   
     {
       id: 4,
       name: "Multicolor Floral Chinon Saree",

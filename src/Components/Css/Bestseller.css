@@ -1,0 +1,107 @@
+/* Best Sellers Container */
+.best-sellers-container {
+    width: 230vh;
+    padding: 30px;
+    background-color: #dfa6a643; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
+
+.best-sellers-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.best-sellers-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #5f220f;
+    margin-bottom: 10px;
+}
+
+.best-sellers-subtitle {
+    font-size: 18px;
+    color: #c79532;
+    font-style: italic;
+}
+
+.best-sellers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    
+}
+
+.best-seller-card {
+    height: 120vh;
+    position: relative;
+    background: #ebcacae7;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Reduced shadow for a softer effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.best-seller-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Softer hover shadow */
+}
+
+/* Product Image */
+.best-seller-image {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-bottom: 3px solid #952d0d;
+    transition: transform 0.3s ease;
+}
+
+.best-seller-card:hover .best-seller-image {
+    transform: scale(1.05);
+}
+
+/* Product Info */
+.best-seller-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.best-seller-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #952d0d;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.best-seller-card:hover .best-seller-name {
+    color: #5b1c09;
+}
+
+.best-seller-price {
+    font-size: 16px;
+    color: #511c0c;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.best-seller-button {
+    padding: 10px 30px;
+    background: linear-gradient(to right, #c14621, #983618);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 87, 34, 0.5);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.best-seller-button:hover {
+    background: linear-gradient(to right,  #952d0d, #ff9800 );
+    transform: translateY(-3px);
+}

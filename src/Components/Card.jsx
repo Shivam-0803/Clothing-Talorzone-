@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const Card = ({ updateCartCount }) => {
-    const { id } = useParams(); // Get the card ID from the URL
+    const { id } = useParams(); 
     const [card, setCard] = useState(null);
 
     useEffect(() => {
-        // You can replace this with a dynamic fetch call to get card details by ID
         setCard({ id, name: `Product ${id}`, description: `Description for product ${id}` });
     }, [id]);
 

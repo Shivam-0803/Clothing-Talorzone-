@@ -12,18 +12,18 @@ const Header = ({ cartCount }) => {
                 <ul>
                     <li><Link to="/">New Arrivals</Link></li>
                     <li><Link to="/ethnic-wear">Ethnic Wear</Link></li>
-                    <li><Link to="/best-sellers">Best Sellers</Link></li>
+                    <li><Link to="/Bestseller">Best Sellers</Link></li>
                     <li><Link to="/dresses">Dresses</Link></li>
                     <li><Link to="/co-ords-jumpsuits">Co-Ords & Jumpsuits</Link></li>
                     <li><Link to="/tops-shirts">Tops & Shirts</Link></li>
-                    <li><Link to="/under-1499">Under 1499 Store</Link></li>
+                    {/* <li><Link to="/Login">Login</Link></li> */}
                 </ul>
             </nav>
             <div className="header-icons">
                 <Link to="/cart">
                     <span className="cart-icon">🛒 {cartCount}</span>
                 </Link>
-                <Link to="/profile">
+                <Link to="/Login">
                     <span className="profile-icon">👤</span>
                 </Link>
             </div>

@@ -1,75 +1,168 @@
-.ethnic-container {
+.ethnic-wear-container {
     width: 100%;
     padding: 20px;
-    background-color: #fafafa;
+    background: linear-gradient(to bottom, #fff8e1, #fbe9e7);
+}
+
+/* Ethnic Wear Banner */
+.ethnic-wear-banner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ethnic-banner-image {
+    opacity: 0.85;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.ethnic-banner-image:hover {
+    transform: scale(1.1);
+    filter: brightness(65%);
+}
+
+.ethnic-banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .ethnic-title {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
-    text-align: center;
-    color: #63210d;
+    color: #ffcc80;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ethnic-subtitle {
+    font-size: 20px;
+    color: #fff;
+    font-style: italic;
     margin-bottom: 20px;
 }
 
-.ethnic-grid {
+.ethnic-button {
+    padding: 12px 25px;
+    background: linear-gradient(to right, #c14621, #983618);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 112, 67, 0.5);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ethnic-button:hover {
+    background: linear-gradient(to right, #952d0d, #ff9800);
+    box-shadow: 0 8px 20px rgba(172, 54, 18, 0.6);
+}
+
+/* Ethnic Product Grid */
+.ethnic-product-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     justify-content: center;
 }
 
-.ethnic-card {
-    width: 250px;
-    background: #fff;
+/* Ethnic Product Card */
+.ethnic-product-card {
+    position: relative;
+    width: 280px;
+    height: 420px;
+    color: #481e09;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.ethnic-card:hover {
+.ethnic-product-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
-.ethnic-image {
+/* Ethnic Product Image */
+.ethnic-product-image {
     width: 100%;
-    height: 70%;
+    height: 75%;
     object-fit: cover;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #63210d;
+    transition: transform 0.3s ease;
 }
 
-.ethnic-info {
+.ethnic-product-card:hover .ethnic-product-image {
+    transform: scale(1.05);
+}
+
+/* Ethnic Product Info */
+.ethnic-product-info {
     padding: 15px;
     text-align: center;
+    background: #d5a59697;
+    color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
-.ethnic-name {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-.ethnic-price {
-    font-size: 16px;
-    color: #e84e1f;
+.ethnic-product-name {
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #691919;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: color 0.3s ease;
 }
 
-.ethnic-add-to-cart {
+.ethnic-product-card:hover .ethnic-product-name {
+    color: #481e09;
+}
+
+.ethnic-product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #7a1111;
+    margin-bottom: 1px;
+}
+
+.ethnic-card-button {
     padding: 10px 20px;
-    background-color: #63210d;
+    background: linear-gradient(to right, #c14621, #983618);
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 87, 34, 0.5);
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.ethnic-add-to-cart:hover {
-    background-color: #b24a2b;
+.ethnic-card-button:hover {
+    background: linear-gradient(to right,  #952d0d, #ff9800);
+    transform: translateY(-3px);
 }
+    
