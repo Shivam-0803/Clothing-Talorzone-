@@ -1,5 +1,5 @@
 import React from "react";
-import "./BestSeller.css";
+import "./Bestseller.css";
 
 const BestSeller = () => {
   const bestSellerProducts = [
